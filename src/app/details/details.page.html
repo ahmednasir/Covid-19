@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <button ion-button class="button-close" (click)="dismissModal()" >Close</button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container-fluid">
+    <div class="card top-card">
+      <div class="share-button">
+        <button class="btn share-btn" (click)="share()">
+          <ion-icon name="share-social-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="card-title">
+        {{ data.title }} 
+      </div>
+      <!-- <img src="assets/images/corona1.jpg" alt="" class="display-image" /> -->
+    </div>
+    <div class="card bottom-card">
+      <div
+        class="
+      card-content"
+      >
+        {{ data.body }} <a href="{{data.url}}">Read more....</a>
+      </div>
+    </div>
+  </div>
+</ion-content>

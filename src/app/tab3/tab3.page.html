@@ -1,17 +1,64 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+    <ion-title style="color: black">
+      FAQ
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="main-content" *ngIf="dataLoaded">
+    <div id="accordion">
+      <div class="card accordion-card" *ngFor="let data of info">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#{{ data.id }}">
+            {{ data.name }}
+          </a>
+        </div>
+        <div id="{{ data.id }}" class="collapse" data-parent="#accordion">
+          <div class="card-body" style="color: black">
+            {{ data.answer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="data-not-loaded" *ngIf="!dataLoaded">
+    <div class="card content-card animated-card">
+      <div class="row bottom-row"></div>
+    </div>
+    <div class="card content-card animated-card">
+      <div class="row bottom-row"></div>
+    </div>
+    <div class="card content-card animated-card">
+      <div class="row bottom-row"></div>
+    </div>
+    <div class="card content-card animated-card">
+      <div class="row bottom-row"></div>
+    </div>
+    <div class="card content-card animated-card">
+      <div class="row bottom-row"></div>
+    </div>
+    <div class="card content-card animated-card">
+      <div class="row bottom-row"></div>
+    </div>
+    <div class="card content-card animated-card">
+        <div class="row bottom-row"></div>
+      </div>
+      <div class="card content-card animated-card">
+        <div class="row bottom-row"></div>
+      </div>
+      <div class="card content-card animated-card">
+        <div class="row bottom-row"></div>
+      </div>
+      <div class="card content-card animated-card">
+        <div class="row bottom-row"></div>
+      </div>
+      <div class="card content-card animated-card">
+        <div class="row bottom-row"></div>
+      </div>
+      <div class="card content-card animated-card">
+        <div class="row bottom-row"></div>
+      </div>
+  </div>
 </ion-content>

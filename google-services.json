@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "910718371621",
+    "firebase_url": "https://covidionic.firebaseio.com",
+    "project_id": "covidionic",
+    "storage_bucket": "covidionic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910718371621:android:3d84cee30b0377dc4fbccc",
+        "android_client_info": {
+          "package_name": "com.covidassam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910718371621-ur663atic4g0tpmg2lgpk7i4ingcjs35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3YP4jFYyuaNf_QlKQoiamNVgvp4n3x0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910718371621-ur663atic4g0tpmg2lgpk7i4ingcjs35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
